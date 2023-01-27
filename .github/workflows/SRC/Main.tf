@@ -9,7 +9,7 @@ terraform {
 backend "azurerm" {
     resource_group_name = "friday-demo-rg"
     storage_account_name = "sttfstatemgt01"
-    comtainer_name = "tfstate"
+    container_name = "tfstate"
     key = "demo.terraform.tfstate"
  }
 }
@@ -22,5 +22,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
     name = "example-resources"
-  location = "West Europe"
+    location = "West Europe"
 }
