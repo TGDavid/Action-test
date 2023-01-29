@@ -8,13 +8,13 @@ terraform {
 
 provider "azurerm" {
   features {}
-   subscription_id = "${var.azure.AzureSubscriptionId}"
+   subscription_id = var.Subscription_Id
 
-   client_id       = "${var.azure.AzureClientId}"
+  #  client_id       = "${var.azure.AzureClientId}"
 
-   client_secret   = "${var.azure.AzureClientSecret}"
+  #  client_secret   = "${var.azure.AzureClientSecret}"
 
-   tenant_id       = "${var.azure.AzureTenantId}"
+  #  tenant_id       = "${var.azure.AzureTenantId}"
 
         # skip_provider_registration = true
 }
