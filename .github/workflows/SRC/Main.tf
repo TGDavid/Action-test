@@ -8,7 +8,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-   subscription_id = var.Subscription_Id
+  
 
   #  client_id       = "${var.azure.AzureClientId}"
 
