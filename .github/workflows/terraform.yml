@@ -20,12 +20,7 @@ jobs:
     name: 'Terraform plan'
     runs-on: ubuntu-latest
     environment: production
-env:
-    ARM_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
-    ARM_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET}}
-    ARM_SUBSCRIPTION_ID: ${{secrets.AZURE_UBSCRIPTION_ID}}
-    ARM_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
-    ROOT_PATH: '${{ github.workspace }}/.github/workflows/SRC/
+
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
